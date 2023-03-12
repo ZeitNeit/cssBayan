@@ -43,6 +43,14 @@ h1:after {
     color:black;
 }
 
+.acrdn__item {
+    transition: 1s ease-out;    
+}
+
+.acrdn__item:hover .acrdn__img {
+    display: block;
+    transition: 1s ease-out;
+}
 
 .acrdn__item:after {
     content: '';
@@ -78,7 +86,7 @@ h1:after {
     background-position: center;
     background-size: 25px;
     background-repeat: no-repeat; */
-    transition-duration: 0.7s;
+    transition: all 0.5s ease-out;
 }
 
 /* .acrdn__title::after { 
@@ -113,6 +121,7 @@ h1:after {
 
 .acrdn__input:checked ~ .acrdn__img {
     display: block;
+    transition: 1s;
 }
 
 .acrdn__input:checked ~ .acrdn__open {
@@ -123,4 +132,5 @@ h1:after {
     display: none;
     margin: 0 auto;
     padding: 20px 15px;
+    transition: 1s;
 }
