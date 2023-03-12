@@ -4,6 +4,8 @@ body {
     font-weight: 900;
     line-height: 1.5;
     background-color: bisque;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 * {
@@ -27,7 +29,7 @@ h1:after {
 .container {
     margin: 20px auto;
     max-width: 1080px;
-    padding: 10px 20px;
+    padding: 10px 100px;
 }
 
 .container:hover .acrdn__open {
@@ -41,9 +43,6 @@ h1:after {
     color:black;
 }
 
-.acrdn__item {
-
-}
 
 .acrdn__item:after {
     content: '';
@@ -72,6 +71,14 @@ h1:after {
 
 .acrdn__open {
     opacity: 0;
+    /* display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/open.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat; */
+    transition-duration: 0.7s;
 }
 
 /* .acrdn__title::after { 
@@ -108,7 +115,12 @@ h1:after {
     display: block;
 }
 
+.acrdn__input:checked ~ .acrdn__open {
+    transform: rotate(45deg);
+}
+
 .acrdn__img {
     display: none;
+    margin: 0 auto;
     padding: 20px 15px;
 }
