@@ -69,13 +69,13 @@ h1:after {
 }
 
 .acrdn__item {
-    transition: 1.5s ease-out;    
+    transition: 1s ease-out;    
 }
 
 .acrdn__item:hover .acrdn__img {
-    height: 40vw;
+    height: 30vw;
     opacity: 1;
-    transition: 1.5s ease-out;
+    transition: 1s ease-out;
 }
 
 .acrdn__item:after {
@@ -146,7 +146,7 @@ h1:after {
 }
 
 .acrdn__input:checked ~ .acrdn__img {
-    height: 40vw;
+    height: 30vw;
     opacity: 1;
     transition: 1s;
 }
