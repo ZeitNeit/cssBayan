@@ -8,31 +8,6 @@ body {
     width: 100vw;
 }
 
-@media (min-width: 400px) {
-    h1 {
-        font-size: 24px; 
-    } 
-    .acrdn__title {
-        font-size: 12px;
-   } 
-}
-
-@media (min-width: 750px) {
-    h1 {
-        font-size: 30px; 
-    } 
-    .acrdn__title {
-        font-size: 16px;
-   } 
-}
-   @media (min-width: 1200px) {
-    h1 {
-        font-size: 32px; 
-    } 
-    .acrdn__title {
-        font-size: 18px;
-   }
-   }
 * {
     box-sizing: border-box;
 }
@@ -162,4 +137,31 @@ h1:after {
     padding: 20px 15px;
     transition: 1.5s;
     max-width: 100%;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px; 
+    } 
+    .acrdn__title {
+        font-size: 12px;
+   } 
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 30px; 
+    } 
+    .acrdn__title {
+        font-size: 16px;
+   } 
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 32px; 
+    } 
+    .acrdn__title {
+        font-size: 18px;
+    }
 }
